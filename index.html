@@ -83,30 +83,15 @@
 
 <div class="footer">
     <p>Grupo de Acompanhamento Filosófico 2026</p>
-    <p><small>"Conhece-te a ti mesmo e conhecerás o Universo!"</small></p>
+    <p><small>"Conhece-te a ti mesmo e governar-te-ás com equilíbrio"</small></p>
 </div>
 
 </div>
 <!-- FIM DO CONTEÚDO PRINCIPAL -->
 
 <script>
-    let SENHA_ACESSO = '';
-    
-    // Carregar configuração do arquivo config.json
-    fetch('config.json')
-        .then(response => response.json())
-        .then(config => {
-            SENHA_ACESSO = config.senha;
-            // Restaurar estado de autenticação se necessário
-            if (sessionStorage.getItem('autenticado') === 'true') {
-                document.getElementById('login-screen').style.display = 'none';
-                document.getElementById('main-content').style.display = 'block';
-            }
-        })
-        .catch(error => {
-            console.error('Erro ao carregar configuração:', error);
-            SENHA_ACESSO = 'padrao'; // Fallback
-        });
+    // Senha fixa para acesso
+    const SENHA_ACESSO = 'gaf7353U';
     
     function validateLogin(event) {
         event.preventDefault();
@@ -132,6 +117,14 @@
             }, 3000);
         }
     }
+    
+    // Verificar se já foi autenticado nesta sessão
+    window.addEventListener('load', function() {
+        if (sessionStorage.getItem('autenticado') === 'true') {
+            document.getElementById('login-screen').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+        }
+    });
 </script>
 
 </body>
