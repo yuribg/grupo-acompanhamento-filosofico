@@ -151,9 +151,7 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: calc(100vh - 200px);
     text-align: center;
-    padding: 40px 20px;
 }
 
 .home-header {
@@ -192,6 +190,10 @@ nav a:hover {
     color: inherit;
     transition: all 0.4s ease;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .stage-card:hover {
@@ -216,9 +218,12 @@ nav a:hover {
 }
 
 .stage-icon {
-    font-size: 3em;
-    margin-bottom: 15px;
+    height: 100px;
+    width: auto;
+    max-width: 150px;
+    margin: 0 auto 15px auto;
     display: block;
+    object-fit: contain;
 }
 
 /* ========== ESTILOS DE LOGIN ========== */
