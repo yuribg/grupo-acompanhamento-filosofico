@@ -12,6 +12,33 @@
 </head>
 <body>
 
+<!-- TELA DE LOGIN -->
+<div id="login-screen" class="login-screen">
+    <div class="login-container">
+        <div class="login-box">
+            <img src="machado.png" alt="Símbolo do Machado" class="login-logo">
+            <h2>Grupo de Acompanhamento Filosófico</h2>
+            <p class="login-subtitle">Digite a senha para continuar</p>
+            
+            <form id="login-form" onsubmit="validateLogin(event)">
+                <input 
+                    type="password" 
+                    id="password-input" 
+                    placeholder="Senha" 
+                    required
+                    autocomplete="off"
+                >
+                <button type="submit" class="login-button">Entrar</button>
+            </form>
+            
+            <p id="login-error" class="login-error" style="display: none;">Senha incorreta!</p>
+        </div>
+    </div>
+</div>
+
+<!-- CONTEÚDO PRINCIPAL (OCULTO ATÉ LOGIN) -->
+<div id="main-content" class="main-content" style="display: none;">
+
 <header>
     <div class="header-container">
         <img src="machado.png" alt="Símbolo do Machado de Duplo Fio" class="header-logo">
@@ -26,7 +53,7 @@
     <div class="home-container">
         <div class="home-header">
             <h1>Escolha sua Etapa</h1>
-            <p>A jornada do herói em três movimentos</p>
+            <p>A jornada do herói em três etapas</p>
         </div>
 
         <div class="stages-grid">
@@ -58,6 +85,47 @@
     <p>Grupo de Acompanhamento Filosófico 2026</p>
     <p><small>"Conhece-te a ti mesmo e governar-te-ás com equilíbrio"</small></p>
 </div>
+
+</div>
+<!-- FIM DO CONTEÚDO PRINCIPAL -->
+
+<script>
+    // Senha fixa para acesso
+    const SENHA_ACESSO = 'gaf7353U';
+    
+    function validateLogin(event) {
+        event.preventDefault();
+        
+        const passwordInput = document.getElementById('password-input');
+        const errorMessage = document.getElementById('login-error');
+        
+        if (passwordInput.value === SENHA_ACESSO) {
+            // Senha correta - mostrar conteúdo principal
+            document.getElementById('login-screen').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+            
+            // Salvar autenticação na sessão
+            sessionStorage.setItem('autenticado', 'true');
+        } else {
+            // Senha incorreta - mostrar erro
+            errorMessage.style.display = 'block';
+            passwordInput.value = '';
+            passwordInput.focus();
+            
+            setTimeout(() => {
+                errorMessage.style.display = 'none';
+            }, 3000);
+        }
+    }
+    
+    // Verificar se já foi autenticado nesta sessão
+    window.addEventListener('load', function() {
+        if (sessionStorage.getItem('autenticado') === 'true') {
+            document.getElementById('login-screen').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+        }
+    });
+</script>
 
 </body>
 </html>
