@@ -83,6 +83,11 @@ nav a:hover {
     margin-bottom: 50px;
 }
 
+.section-container {
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
 .section-title {
     border-left: 5px solid var(--accent-color);
     padding-left: 15px;
@@ -342,5 +347,237 @@ nav a:hover {
 
 .main-content {
     /* Garante que o conteúdo principal fique visível quando autenticado */
+}
+
+/* ========== RESPONSIVIDADE PARA CELULARES ========== */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 15px;
+    }
+
+    .login-box {
+        padding: 35px 25px;
+        border-radius: 10px;
+    }
+
+    .login-box h2 {
+        font-size: 1.5em;
+        margin-bottom: 8px;
+    }
+
+    .login-subtitle {
+        font-size: 0.9em;
+        margin-bottom: 20px;
+    }
+
+    .login-logo {
+        height: 60px;
+        margin-bottom: 20px;
+    }
+
+    #password-input {
+        padding: 10px 12px;
+        font-size: 16px;
+    }
+
+    .login-button {
+        padding: 10px 15px;
+        font-size: 0.95em;
+    }
+
+    .login-error {
+        font-size: 0.9em;
+    }
+
+    header {
+        padding: 25px 15px;
+    }
+
+    .header-container {
+        gap: 15px;
+    }
+
+    .header-logo {
+        height: 70px;
+    }
+
+    .header-text h1 {
+        font-size: 1.8em;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .header-text p {
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 0.8em;
+    }
+
+    .home-header h1 {
+        font-size: 2em;
+    }
+
+    .home-header p {
+        font-size: 1.1em;
+    }
+
+    .stages-grid {
+        gap: 20px;
+    }
+
+    .stage-card {
+        padding: 25px 20px;
+    }
+
+    .section-title {
+        font-size: 1.3em;
+        margin: 15px 0 20px;
+    }
+
+    .bimestre-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .bastiao-link {
+        font-size: 0.85em;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        padding: 20px 20px;
+    }
+
+    .login-box h2 {
+        font-size: 1.3em;
+    }
+
+    .login-subtitle {
+        font-size: 0.85em;
+    }
+
+    .login-logo {
+        height: 50px;
+        margin-bottom: 15px;
+    }
+
+    #password-input {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .login-button {
+        padding: 10px 12px;
+        font-size: 0.9em;
+    }
+
+    header {
+        padding: 20px 15px;
+        border-bottom: 3px solid var(--accent-color);
+    }
+
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-logo {
+        height: 50px;
+    }
+
+    .header-text h1 {
+        font-size: 1.4em;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .header-text p {
+        text-align: center;
+    }
+
+    nav {
+        padding: 8px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 3px 5px;
+        font-size: 0.75em;
+    }
+
+    .container {
+        padding: 15px;
+        margin: 0px auto;
+    }
+
+    .home-header h1 {
+        font-size: 1.5em;
+    }
+
+    .home-header p {
+        font-size: 0.95em;
+    }
+
+    .stages-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .stage-card {
+        padding: 20px 15px;
+        border-width: 2px;
+    }
+
+    .stage-card h2 {
+        font-size: 1.2em;
+    }
+
+    .stage-card p {
+        font-size: 0.85em;
+    }
+
+    .stage-icon {
+        height: 50px;
+    }
+
+    .section-title {
+        font-size: 1.1em;
+        padding-left: 10px;
+    }
+
+    .intro {
+        font-size: 0.9em;
+    }
+
+    .section-container {
+        font-size: 0.9em;
+        margin-top: 30px;
+    }
+
+    .card h3 {
+        font-size: 1.1em;
+    }
+
+    .bastiao-link {
+        font-size: 0.8em;
+        padding: 8px;
+        margin: 6px 0;
+    }
+
+    .footer {
+        padding: 20px 10px;
+        font-size: 0.9em;
+        margin-top: 0px;
+    }
 }
 
