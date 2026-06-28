@@ -43,12 +43,14 @@ header {
     font-size: 2.5em;
     letter-spacing: 2px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .header-text p {
     font-style: italic;
     color: var(--accent-color);
     margin: 5px 0 0 0;
+    text-align: center;
 }
 
 nav {
