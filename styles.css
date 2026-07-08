@@ -1,6 +1,6 @@
 :root {
     --primary-color: #1a1a1a;
-    --accent-color: #c5a059; /* Dourado para o Heroísmo */
+    --accent-color: #c5a059;
     --text-light: #f4f4f4;
     --text-dark: #333;
     --bg-card: #ffffff;
@@ -72,6 +72,15 @@ nav a {
 
 nav a:hover {
     color: var(--accent-color);
+}
+
+.notas a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.notas a:hover {
+    text-decoration: underline;
 }
 
 .container {
@@ -582,4 +591,3 @@ nav a:hover {
         margin-top: 0px;
     }
 }
-
