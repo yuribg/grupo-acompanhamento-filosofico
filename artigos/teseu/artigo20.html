@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Pular para o conteudo principal</a>
 
 <script src="./../../auth.js"></script>
 <script>
@@ -24,9 +25,9 @@
         </div>
     </header>
 
-    <main class="container">
+    <main id="conteudo" class="container" aria-label="Conteudo do artigo">
         
-        <article class="section-container">
+        <article class="section-container" aria-label="Texto principal do artigo">
             <blockquote>
                 <p>Nossa irmandade consiste em fazer primar tudo o que nos une, por sobre tudo o que nos separa...<br>
                 “NÃO É SÓ PARA PENSAR, É PARA VIVER”</p>
@@ -60,9 +61,14 @@
             <p>E recordemos que ISTO NÃO É SÓ PARA PENSAR, MAS PARA VIVER; tal como recomendou HPB, as Verdades, uma vez descobertas, devem ser honradas com a prática. E nosso fundador nos incita ao mesmo: pensar e viver, ambas as coisas, como meio eficaz para chegar a IRMANDADE, a Fraternidade com Consciência.</p>
         </article>
 
+    <nav class="article-nav" aria-label="Navegação entre artigos">
+        <a href="artigo19.html" aria-label="Artigo anterior">&larr; Anterior</a>
+        <a href="../../../teseu.html" aria-label="Voltar para etapa Teseu">Voltar</a>
+        <a href="artigo21.html" aria-label="Próximo artigo">Próximo &rarr;</a>
+    </nav>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" aria-label="Rodape do artigo">
         <hr>
         <p>[D]</p>
     </footer>

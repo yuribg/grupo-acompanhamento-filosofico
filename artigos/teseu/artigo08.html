@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Pular para o conteudo principal</a>
 
 <script src="./../../auth.js"></script>
 <script>
@@ -24,9 +25,9 @@
         </div>
     </header>
 
-    <main class="container">
+    <main id="conteudo" class="container" aria-label="Conteudo do artigo">
         
-        <article class="section-container">
+        <article class="section-container" aria-label="Texto principal do artigo">
             <p>Como de costume em todas as Reuniões Internacionais, na última, ocorrida no mês passado, abril, no Brasil, começamos a primeira jornada abrindo um livro azul em uma página, para receber alguma frase que nos servisse de inspiração, não somente na Reunião, mas ao longo do novo ano de trabalho que nos espera a partir desse momento.</p>
             
             <p>Nesta oportunidade, escolhemos uma antiga edição de “A Voz do silêncio”, coletados por HPB, que contém duas belas peças denominadas “Os Dois Caminhos e Os Sete Portais”. De “Os Dois Caminhos” surgiram às palavras que constitui o título deste artigo, e destas palavras queremos extrair alguns ensinamentos e refrescar algumas outras recordações de nossa formação filosófica, para sermos melhores e mais fieis ao nosso lema durante os próximos meses.</p>
@@ -60,9 +61,14 @@
             <p>Que o exemplo de HPB, ao que orgulhosamente somamos o que também nos deu nosso fundador, seja inspiração cotidiana para trabalhar hoje e sempre por Eles. O hoje é nosso; o amanhã é d’Eles, o que equivale a dizer que também é nosso.</p>
         </article>
 
+    <nav class="article-nav" aria-label="Navegação entre artigos">
+        <a href="artigo07.html" aria-label="Artigo anterior">&larr; Anterior</a>
+        <a href="../../../teseu.html" aria-label="Voltar para etapa Teseu">Voltar</a>
+        <a href="artigo09.html" aria-label="Próximo artigo">Próximo &rarr;</a>
+    </nav>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" aria-label="Rodape do artigo">
         <hr>
         <p>[D]</p>
     </footer>

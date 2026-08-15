@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Pular para o conteudo principal</a>
 
 <script src="./../../auth.js"></script>
 <script>
@@ -24,9 +25,9 @@
         </div>
     </header>
 
-    <main class="container">
+    <main id="conteudo" class="container" aria-label="Conteudo do artigo">
         
-        <article class="section-container">
+        <article class="section-container" aria-label="Texto principal do artigo">
             <blockquote>
                 <p>“Sem comunicação, não há convivência, e sem convivência, nosso projeto histórico de um Mundo Novo e Melhor é impossível”.</p>
                 <cite>JAL</cite>
@@ -83,9 +84,14 @@
             <p>Quando há boa comunicação nossa fraternidade se fortalece, o trabalho se realiza de maneira mais eficaz, perde-se menos tempo e se convive com maior felicidade.</p>
         </article>
 
+    <nav class="article-nav" aria-label="Navegação entre artigos">
+        <a href="artigo17.html" aria-label="Artigo anterior">&larr; Anterior</a>
+        <a href="../../../teseu.html" aria-label="Voltar para etapa Teseu">Voltar</a>
+        <a href="artigo19.html" aria-label="Próximo artigo">Próximo &rarr;</a>
+    </nav>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" aria-label="Rodape do artigo">
         <hr>
         <p>[B]</p>
     </footer>

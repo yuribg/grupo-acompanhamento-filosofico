@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +8,33 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a class="skip-link" href="#login-form">Pular para o formulário de login</a>
 
-<div id="login-screen" class="login-screen">
-    <div class="login-container">
-        <div class="login-box">
-            <img src="./imagens/acropole.png" alt="Símbolo da Acrópole" class="login-logo">
-            <h2>Grupo de Acompanhamento Filosófico</h2>
-            <p class="login-subtitle">Digite a senha para continuar</p>
+    <main id="conteudo" class="login-screen" aria-label="Tela de login do site">
+        <div class="login-container">
+            <div class="login-box">
+                <img src="./imagens/acropole.png" alt="Símbolo da Acrópole" class="login-logo">
+                <h1>Grupo de Acompanhamento Filosófico</h1>
+                <p class="login-subtitle">Digite a senha para continuar</p>
 
-            <form id="login-form" onsubmit="validateLogin(event)">
-                <input
-                    type="password"
-                    id="password-input"
-                    placeholder="Senha"
-                    required
-                    autocomplete="off"
-                >
-                <button type="submit" class="login-button">Entrar</button>
-            </form>
+                <form id="login-form" onsubmit="validateLogin(event)" aria-label="Formulário de login">
+                    <label for="password-input" class="sr-only">Senha</label>
+                    <input
+                        type="password"
+                        id="password-input"
+                        placeholder="Senha"
+                        aria-label="Senha de acesso"
+                        aria-describedby="login-error"
+                        required
+                        autocomplete="off"
+                    >
+                    <button type="submit" class="login-button" aria-label="Entrar no site">Entrar</button>
+                </form>
 
-            <p id="login-error" class="login-error" style="display: none;">Senha incorreta!</p>
+                <p id="login-error" class="login-error" role="alert" aria-live="assertive" style="display: none;">Senha incorreta!</p>
+            </div>
         </div>
-    </div>
-</div>
+    </main>
 
 <script src="auth.js"></script>
 <script>

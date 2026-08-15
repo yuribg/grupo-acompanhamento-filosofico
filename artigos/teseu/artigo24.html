@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Pular para o conteudo principal</a>
 
 <script src="./../../auth.js"></script>
 <script>
@@ -24,9 +25,9 @@
         </div>
     </header>
 
-    <main class="container">
+    <main id="conteudo" class="container" aria-label="Conteudo do artigo">
         
-        <article class="section-container">
+        <article class="section-container" aria-label="Texto principal do artigo">
             <p>Neste mês de dezembro se celebrou o bicentenário da morte de Mozart, um gênio como poucos na história da Música. Através de todos os veículos de comunicação tivemos a oportunidade de ler, escutar e ver os feitos relacionados com a vida deste homem prodigioso. Ainda que não coincidam os pontos de vista enquanto a forma de julgá-lo - pois há quem o considera glorioso frente aqueles que o vêem apenas vulgar -, no que todos se põem de acordo é que foi um ser excepcional, desses que marcam seu tempo de maneira indelével. Amado ou odiado? Isso forma parte da capacidade de cada um, bem para reconhecer os limites de quem nos supera, ou para um parecer de inveja.</p>
             
             <p>Eu sempre gostei de Mozart e sempre comentei disso ao nosso fundador. Tinha por costume “torturá-lo” com longas conversas lhe contando de minha época de pianista e minha satisfação ao interpretar Mozart. E devo confessar que jamais tive um ouvinte tão respeitoso e interessado para conhecer mais e mais. Era nosso fundador quem me perguntava ou me pedia que lhe explicasse algo sobre o novo disco que me havia comprado ou sobre o livro em que me achava imersa. Claro, sua curiosidade e capacidade de saber não se esgotavam em Mozart.</p>
@@ -54,9 +55,14 @@
             <p>Junto a Mozart que recordamos neste mês de dezembro, colocamos no alto pedestal dos prodígios a este Mestre de Homens que, sem dúvida alguma, não deixou o mundo igual ao que encontrou. Deus se apiede de nós, que ficamos num mundo medíocre, e nos permita de vez em quando vislumbrar a luz eterna que iluminou a existência de nosso fundador.</p>
         </article>
 
+    <nav class="article-nav" aria-label="Navegação entre artigos">
+        <a href="artigo23.html" aria-label="Artigo anterior">&larr; Anterior</a>
+        <a href="../../../teseu.html" aria-label="Voltar para etapa Teseu">Voltar</a>
+        <span class="article-nav-disabled">Próximo &rarr;</span>
+    </nav>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" aria-label="Rodape do artigo">
         <hr>
         <p>[D]</p>
     </footer>

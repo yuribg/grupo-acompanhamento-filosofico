@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Pular para o conteudo principal</a>
 
 <script src="./../../auth.js"></script>
 <script>
@@ -24,9 +25,9 @@
         </div>
     </header>
 
-    <main class="container">
+    <main id="conteudo" class="container" aria-label="Conteudo do artigo">
         
-        <article class="section-container">
+        <article class="section-container" aria-label="Texto principal do artigo">
             <p>As nossas sociedades – como a de todos os tempos- põem em moda certos conceitos que, sem nos dar conta, supre outros similares, substituindo somente com novas palavras.</p>
             
             <p>Uma dessas palavras, que serve para todos, é “voluntariado”. O que havíamos conhecido como ajuda social, ação social, caridade, e, equivalentes, hoje assume a forma mais séria e intelectual de voluntariado.</p>
@@ -60,9 +61,14 @@
             <p>Uma vez mais, o voluntariado é um ato de Discipulado, o fruto natural de quem se sente servidor da Sabedoria, filósofo nascente com vocação de crescimento para ter mais e melhor, e dar mais e melhor. As palavras podem variar, porém este caso é, sem dúvida, o velho ideal do Discipulado posto em ação que requer, hoje como sempre, generosidade, conhecimento de si mesmo, integridade interior e mística universal.</p>
         </article>
 
+    <nav class="article-nav" aria-label="Navegação entre artigos">
+        <a href="artigo05.html" aria-label="Artigo anterior">&larr; Anterior</a>
+        <a href="../../../teseu.html" aria-label="Voltar para etapa Teseu">Voltar</a>
+        <a href="artigo07.html" aria-label="Próximo artigo">Próximo &rarr;</a>
+    </nav>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" aria-label="Rodape do artigo">
         <hr>
         <p>[D]</p>
     </footer>

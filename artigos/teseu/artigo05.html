@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Pular para o conteudo principal</a>
 
 <script src="./../../auth.js"></script>
 <script>
@@ -24,9 +25,9 @@
         </div>
     </header>
 
-    <main class="container">
+    <main id="conteudo" class="container" aria-label="Conteudo do artigo">
         
-        <article class="section-container">
+        <article class="section-container" aria-label="Texto principal do artigo">
             <p>Estas são as três palavras que caracterizam N.A. quando a apresentamos externamente em nossos diversos folhetos, pôsteres e nas página Web de Internet dos diversos países que compõem a OIN.A..</p>
             
             <p>Mas penso que é muito importante que nos conscientizemos melhor de seu significado, além das simples palavras, em relação com a mensagem filosófica e espiritual que N.A. oferece, como uma alternativa muito interessante, ao mundo atual.</p>
@@ -85,9 +86,14 @@
             <p>Vemos, pois, a grande importância que têm estas três palavras que caracterizam a OINA e encabeçam, na ordem mencionada, suas páginas Web em todos os países. Por trás delas, há todo um conteúdo simbólico, filosófico e esotérico que o estudo e aprofundamento na Filosofia nos poderá permitir compreender muito melhor.</p>
         </article>
 
+    <nav class="article-nav" aria-label="Navegação entre artigos">
+        <a href="artigo04.html" aria-label="Artigo anterior">&larr; Anterior</a>
+        <a href="../../../teseu.html" aria-label="Voltar para etapa Teseu">Voltar</a>
+        <a href="artigo06.html" aria-label="Próximo artigo">Próximo &rarr;</a>
+    </nav>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" aria-label="Rodape do artigo">
         <hr>
         <p>[G]</p>
     </footer>

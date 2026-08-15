@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Pular para o conteudo principal</a>
 
 <script src="./../../auth.js"></script>
 <script>
@@ -24,9 +25,9 @@
         </div>
     </header>
 
-    <main class="container">
+    <main id="conteudo" class="container" aria-label="Conteudo do artigo">
         
-        <article class="section-container">
+        <article class="section-container" aria-label="Texto principal do artigo">
             <p>A História é um extraordinário exemplo onde aparecem como cristais de cores variadas, segundo a luz, as diferentes ideias que definiu os estilos de vida do homem. Cada período tem seus parâmetros, e no caminho incessante de busca, os humanos se regem por esses modelos, tratando de segui-los e obedecê-los, de uma forma que não fariam com nenhuma outra ideia que procedesse de outra fonte. O comumente aceito é lei, e de acordo ao transcurso dos tempos, há aceitações que têm mais força que as leis.</p>
             
             <p>Assim em todo momento, o êxito tem sido uma meta, ainda que nem sempre se tenha considerado o êxito da mesma maneira. O que assinalava o triunfo num século, ou em décadas atrás, hoje podem ser um anseio desfocado e fora de moda, no mesmo nível, outras ambições ocuparam o lugar das anteriores. Só uma coisa permanece: o desejo de êxito, a necessidade de triunfar, o fato de ser aceito e levado em consideração pelos demais, ajustando-se à lei que faz do conjunto –nós e os demais- uma massa coerente na qual não se pode sobressair nem sequer para encontrar esse êxito por outros rumos.</p>
@@ -72,9 +73,14 @@
             <p>Se fossemos muitos os que trabalhássemos assim, até valeria a pena fazer moda desta particular maneira de triunfar na vida.</p>
         </article>
 
+    <nav class="article-nav" aria-label="Navegação entre artigos">
+        <a href="artigo01.html" aria-label="Artigo anterior">&larr; Anterior</a>
+        <a href="../../../teseu.html" aria-label="Voltar para etapa Teseu">Voltar</a>
+        <a href="artigo03.html" aria-label="Próximo artigo">Próximo &rarr;</a>
+    </nav>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" aria-label="Rodape do artigo">
         <hr>
         <p>[D]</p>
     </footer>

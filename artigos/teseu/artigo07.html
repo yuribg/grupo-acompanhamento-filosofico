@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Pular para o conteudo principal</a>
 
 <script src="./../../auth.js"></script>
 <script>
@@ -24,9 +25,9 @@
         </div>
     </header>
 
-    <main class="container">
+    <main id="conteudo" class="container" aria-label="Conteudo do artigo">
         
-        <article class="section-container">
+        <article class="section-container" aria-label="Texto principal do artigo">
             <p>Estou frente a uma mesa de escritório de um dos tantos Países a que me leva meu cargo de Diretor Internacional e minha vocação errante de cidadão do Mundo, sem mais terra, minha, que a que está sob as solas dos meus sapatos, sem mais família que todos vocês, nem mais sonhos que os de engrandecer nossa Obra Filosófica.</p>
             
             <p>É uma sala ampla, e no extremo oposto, o Diretor Nacional instrui a uma Secretária sobre não sei que tema. Às minhas costas, mais além das cortinas e dos cristais, corre apressada a vida da grande cidade. Meu escritório está coberto de papeis de todo tipo, a que eu chamo “minha divina desordem”, no qual extravio e encontro coisas quase constantemente.</p>
@@ -44,9 +45,14 @@
             <p>SABEM? SOU FELIZ.</p>
         </article>
 
+    <nav class="article-nav" aria-label="Navegação entre artigos">
+        <a href="artigo06.html" aria-label="Artigo anterior">&larr; Anterior</a>
+        <a href="../../../teseu.html" aria-label="Voltar para etapa Teseu">Voltar</a>
+        <a href="artigo08.html" aria-label="Próximo artigo">Próximo &rarr;</a>
+    </nav>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" aria-label="Rodape do artigo">
         <hr>
         <p>[J]</p>
     </footer>

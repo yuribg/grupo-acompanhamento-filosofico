@@ -1,140 +1,131 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Etapa Teseu - Grupo de Acompanhamento Filosófico</title>
-    
-    <!-- Definição do Machado como Ícone do Site -->
+
     <link rel="icon" type="image/png" href="./imagens/machado.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
 
-<script src="auth.js"></script>
-<script>
-    requireAuthentication();
-</script>
+    <script src="auth.js"></script>
+    <script>
+        requireAuthentication();
+    </script>
 
-<header>
-    <div class="header-container">
-        <!-- O Machado ao lado dos textos -->
-        <img src="./imagens/machado.png" alt="Símbolo do Machado de Duplo Fio" class="header-logo">
-        <div class="header-text">
-            <h1>Etapa Teseu</h1>
-            <p>Grupo de Acompanhamento Filosófico</p>
+    <header>
+        <div class="header-container">
+            <img src="./imagens/machado.png" alt="Símbolo do Machado de Duplo Fio" class="header-logo">
+            <div class="header-text">
+                <h1>Etapa Teseu</h1>
+                <p>Grupo de Acompanhamento Filosófico</p>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
-<nav>
-    <a href="#objetivo">Objetivo</a>
-    <a href="#bimestres">Cronograma</a>
-    <a href="#inspiracao">Inspiracão</a>
-    <a href="#praticas">Práticas</a>
-    <a href="index.html">Etapas</a>
-</nav>
+    <nav aria-label="Menu principal">
+        <a href="#objetivo">Objetivo</a>
+        <a href="#bimestres">Cronograma</a>
+        <a href="#inspiracao">Inspiração</a>
+        <a href="#praticas">Práticas</a>
+        <a href="etapas.html" aria-label="Voltar para a página das etapas">Etapas</a>
+    </nav>
 
-<div class="container">
-    <section id="objetivo" class="intro">
-        <h2 class="section-title">O Objetivo da Etapa</h2>
-        <p>A Etapa Teseu corresponde ao <strong>primeiro ano de formação</strong> dentro do Grupo de Acompanhamento Filosófico.</p>
-        <p>O objetivo central desta formação é <strong>transformar conceitos em percepções, e essas, em vivências</strong>. Ver como a prática cotidiana daquilo que se aprende em sala de aula é verdadeiramente transformadora. Uma pessoa que experimenta viver aquilo que aprende percebe que está diante de algo valiosíssimo.</p>
-    </section>
+    <main id="conteudo" class="container" aria-label="Conteúdo da etapa Teseu">
+        <section id="objetivo" class="intro">
+            <h2 class="section-title">O Objetivo da Etapa</h2>
+            <p>A Etapa Teseu corresponde ao <strong>primeiro ano de formação</strong> dentro do Grupo de Acompanhamento Filosófico.</p>
+            <p>O objetivo central desta formação é <strong>transformar conceitos em percepções, e essas, em vivências</strong>. Ver como a prática cotidiana daquilo que se aprende em sala de aula é verdadeiramente transformadora. Uma pessoa que experimenta viver aquilo que aprende percebe que está diante de algo valiosíssimo.</p>
+        </section>
 
-    <h2 class="section-title" id="bimestres">Cronograma de Leituras</h2>
-    <div class="bimestre-grid">
-        
-        <!-- 1º Bimestre -->
-        <div class="card">
-            <span class="tag">1º Bimestre</span>
-            <h3>O Herói, suas Provas e como superá-las</h3>
-            <p>Reconhecer problemas como provas. Perceber o aspecto interno, que é a prova e transformar.</p>
-            <a href="bastioes/teseu/artigo01.html" class="bastiao-link">#01 – O Heroísmo</a>
-            <a href="bastioes/teseu/artigo02.html" class="bastiao-link">#02 – Triunfar na Vida</a>
-            <a href="bastioes/teseu/artigo03.html" class="bastiao-link">#03 – O Herói e seus Companheiros</a>
-            <a href="bastioes/teseu/artigo04.html" class="bastiao-link">#04 – A Experiência Pessoal</a>
+        <h2 class="section-title" id="bimestres">Cronograma de Leituras</h2>
+        <div class="bimestre-grid">
+            <div class="card">
+                <span class="tag">1º Bimestre</span>
+                <h3>O Herói, suas Provas e como superá-las</h3>
+                <p>Reconhecer problemas como provas. Perceber o aspecto interno, que é a prova e transformar.</p>
+                <a href="artigos/teseu/artigo01.html" class="bastiao-link" aria-label="Ler o artigo número um sobre heroísmo">#01 – O Heroísmo</a>
+                <a href="artigos/teseu/artigo02.html" class="bastiao-link" aria-label="Ler o artigo número dois sobre triunfar na vida">#02 – Triunfar na Vida</a>
+                <a href="artigos/teseu/artigo03.html" class="bastiao-link" aria-label="Ler o artigo número três sobre o herói e seus companheiros">#03 – O Herói e seus Companheiros</a>
+                <a href="artigos/teseu/artigo04.html" class="bastiao-link" aria-label="Ler o artigo número quatro sobre a experiência pessoal">#04 – A Experiência Pessoal</a>
+            </div>
+
+            <div class="card">
+                <span class="tag">2º Bimestre</span>
+                <h3>Um Ideal e sua proposta de ação no mundo</h3>
+                <p>Perceber como servir a uma ideia filosófica nos torna melhores e ajuda os demais. Eleger uma ideia ou um valor para aplicar e ver o impacto em si e nas relações.</p>
+                <a href="artigos/teseu/artigo05.html" class="bastiao-link" aria-label="Ler o artigo número cinco sobre filosofia, cultura e voluntariado">#05 – Filosofia, Cultura e Voluntariado</a>
+                <a href="artigos/teseu/artigo06.html" class="bastiao-link" aria-label="Ler o artigo número seis sobre voluntariado">#06 – Voluntariado</a>
+                <a href="artigos/teseu/artigo07.html" class="bastiao-link" aria-label="Ler o artigo número sete sobre transmitir o ideal filosófico">#07 – Do maravilhoso que é transmitir o Ideal Filosófico</a>
+                <a href="artigos/teseu/artigo08.html" class="bastiao-link" aria-label="Ler o artigo número oito sobre trabalhar em nome de algo maior">#08 – Trabalhar em nome de algo maior</a>
+            </div>
+
+            <div class="card">
+                <span class="tag">3º Bimestre</span>
+                <h3>Como atuar sobre si mesmo e no mundo, o Serviço</h3>
+                <p>Traduzir “estou sem tempo” como “estou sem consciência”, “preciso encontrar uma resposta”.</p>
+                <a href="artigos/teseu/artigo09.html" class="bastiao-link" aria-label="Ler o artigo número nove sobre os desejos e a vontade">#09 – Os desejos e a vontade</a>
+                <a href="artigos/teseu/artigo10.html" class="bastiao-link" aria-label="Ler o artigo número dez sobre o trabalho">#10 – O trabalho</a>
+                <a href="artigos/teseu/artigo11.html" class="bastiao-link" aria-label="Ler o artigo número onze sobre as barreiras invisíveis da ação">#11 – As barreiras invisíveis da ação</a>
+                <a href="artigos/teseu/artigo12.html" class="bastiao-link" aria-label="Ler o artigo número doze sobre a ação">#12 – A Ação</a>
+            </div>
+
+            <div class="card">
+                <span class="tag">4º Bimestre</span>
+                <h3>Como atuar sobre si mesmo e no mundo, o Serviço</h3>
+                <p>Observar quando resistimos à vida e nos colocarmos de coração na experiência, perceber o que muda.</p>
+                <a href="artigos/teseu/artigo13.html" class="bastiao-link" aria-label="Ler o artigo número treze sobre as três virtudes">#13 – As 3 virtudes</a>
+                <a href="artigos/teseu/artigo14.html" class="bastiao-link" aria-label="Ler o artigo número quatorze sobre nossa atitude nas aulas">#14 – Nossa atitude nas aulas</a>
+                <a href="artigos/teseu/artigo15.html" class="bastiao-link" aria-label="Ler o artigo número quinze sobre vontade e ação">#15 – Vontade - Ação</a>
+                <a href="artigos/teseu/artigo16.html" class="bastiao-link" aria-label="Ler o artigo número dezesseis sobre o exemplo de HPB">#16 – O Exemplo de HPB</a>
+            </div>
+
+            <div class="card">
+                <span class="tag">5º Bimestre</span>
+                <h3>A Fraternidade</h3>
+                <p>Aprender a gostar por vontade de uma pessoa que rejeitamos.</p>
+                <a href="artigos/teseu/artigo17.html" class="bastiao-link" aria-label="Ler o artigo número dezessete sobre cortesia filosófica">#17 – Para uma Cortesia Filosófica</a>
+                <a href="artigos/teseu/artigo18.html" class="bastiao-link" aria-label="Ler o artigo número dezoito sobre importância da boa comunicação">#18 – Importância da boa comunicação para obter a convivência</a>
+                <a href="artigos/teseu/artigo19.html" class="bastiao-link" aria-label="Ler o artigo número dezenove sobre fraternidade filosófica">#19 – Em que consiste nossa fraternidade filosófica?</a>
+                <a href="artigos/teseu/artigo20.html" class="bastiao-link" aria-label="Ler o artigo número vinte sobre irmandade">#20 – Irmandade</a>
+            </div>
+
+            <div class="card">
+                <span class="tag">6º Bimestre</span>
+                <h3>A Bondade e a Generosidade</h3>
+                <p>Participar da vida sem expectativa (sem desejo ou medo). Perceber-se como uma parte a serviço do que a vida lhe apresenta como necessidade.</p>
+                <a href="artigos/teseu/artigo21.html" class="bastiao-link" aria-label="Ler o artigo número vinte e um sobre harmonia e bondade">#21 – A harmonia e a bondade</a>
+                <a href="artigos/teseu/artigo22.html" class="bastiao-link" aria-label="Ler o artigo número vinte e dois sobre fazer parte">#22 – Fazer parte</a>
+                <a href="artigos/teseu/artigo23.html" class="bastiao-link" aria-label="Ler o artigo número vinte e três sobre atuar com o coração">#23 – Atuar com o coração</a>
+                <a href="artigos/teseu/artigo24.html" class="bastiao-link" aria-label="Ler o artigo número vinte e quatro sobre Mozart">#24 – Mozart é um gênio</a>
+            </div>
         </div>
 
-        <!-- 2º Bimestre -->
-        <div class="card">
-            <span class="tag">2º Bimestre</span>
-            <h3>Um Ideal e sua proposta de ação no mundo</h3>
-            <p>Perceber como servir a uma ideia filosófica nos torna melhores e ajuda os demais. Eleger uma ideia ou um valor para aplicar e ver o impacto em si e nas relações.</p>
-            <a href="bastioes/teseu/artigo05.html" class="bastiao-link">#05 – Filosofia, Cultura e Voluntariado</a>
-            <a href="bastioes/teseu/artigo06.html" class="bastiao-link">#06 – Voluntariado</a>
-            <a href="bastioes/teseu/artigo07.html" class="bastiao-link">#07 – Do maravilhoso que é transmitir o Ideal Filosófico</a>
-            <a href="bastioes/teseu/artigo08.html" class="bastiao-link">#08 – Trabalhar em nome de algo maior</a>
-        </div>
+        <section id="inspiracao" class="section-container">
+            <h2 class="section-title">Inspiração Mitológica</h2>
+            <p>O eixo simbólico dessa etapa é a <strong>figura do herói, inspirada em Teseu.</strong> O herói é aquele que rompe com o habitual, com o automático e com o simplesmente familiar, e se lança de forma consciente na aventura da vida. É isso que buscamos: um abandono progressivo de uma visão centrada apenas no próprio núcleo ou nos próprios interesses, em direção a uma percepção mais ampla, onde reconhecemo-nos como célula de um grande corpo chamado humanidade. É um convite a se ver como parte ativa da humanidade, percebendo que sua vida ganha sentido quando é colocada a serviço de algo que a transcende.</p>
+            <p>O símbolo do <strong>machado de duplo fio</strong> sintetiza esse processo. Ele representa essa abertura de um novo caminho para dentro e para fora ao mesmo tempo. É o trabalho interno e externo que buscamos: compreensões e vivências; transformação de si mesmo e ação no mundo. O nosso desenvolvimento deve ser, ao mesmo tempo, individual e coletivo — para nós e para os demais.</p>
+        </section>
 
-        <!-- 3º Bimestre -->
-        <div class="card">
-            <span class="tag">3º Bimestre</span>
-            <h3>Como atuar sobre si mesmo e no mundo, o Serviço</h3>
-            <p>Traduzir “estou sem tempo” como “estou sem consciência”, “preciso encontrar uma resposta”.</p>
-            <a href="bastioes/teseu/artigo09.html" class="bastiao-link">#09 – Os desejos e a vontade</a>
-            <a href="bastioes/teseu/artigo10.html" class="bastiao-link">#10 – O trabalho</a>
-            <a href="bastioes/teseu/artigo11.html" class="bastiao-link">#11 – As barreiras invisíveis da ação</a>
-            <a href="bastioes/teseu/artigo12.html" class="bastiao-link">#12 – A Ação</a>
-        </div>
+        <section id="praticas" class="section-container">
+            <h2 class="section-title">Práticas de Vida Interior</h2>
+            <p>O Grupo não se resume a leituras. Os encontros são orientados por <strong>Práticas</strong> e <strong>Desafios Bimestrais</strong>.</p>
+            <ul>
+                <li><strong>Diário de Vida Interior:</strong> Sugerimos o registro constante de suas percepções.</li>
+                <li><strong>Práticas Dinâmicas:</strong> Mais importante até do que fazer práticas de olhos fechados e sentados, é fazê-las de olhos abertos e em movimento, na vida real.</li>
+                <li><strong>Acompanhamento Filosófico:</strong> As dificuldades encontradas podem ser levadas aos instrutores para aconselhamento e aprofundamento.</li>
+            </ul>
+        </section>
+    </main>
 
-        <!-- 4º Bimestre -->
-        <div class="card">
-            <span class="tag">4º Bimestre</span>
-            <h3>Como atuar sobre si mesmo e no mundo, o Serviço</h3>
-            <p>Observar quando resistimos à vida e nos colocarmos de coração na experiência, perceber o que muda.</p>
-            <a href="bastioes/teseu/artigo13.html" class="bastiao-link">#13 – As 3 virtudes</a>
-            <a href="bastioes/teseu/artigo14.html" class="bastiao-link">#14 – Nossa atitude nas aulas</a>
-            <a href="bastioes/teseu/artigo15.html" class="bastiao-link">#15 – Vontade - Ação</a>
-            <a href="bastioes/teseu/artigo16.html" class="bastiao-link">#16 – O Exemplo de HPB</a>
-        </div>
-
-
-        <!-- 5º Bimestre -->
-        <div class="card">
-            <span class="tag">5º Bimestre</span>
-            <h3>A Fraternidade</h3>
-            <p>Aprender a gostar por vontade de uma pessoa que rejeitamos.</p>
-            <a href="bastioes/teseu/artigo17.html" class="bastiao-link">#17 – Para uma Cortesia Filosófica</a>
-            <a href="bastioes/teseu/artigo18.html" class="bastiao-link">#18 – Importância da boa comunicação para obter a convivência</a>
-            <a href="bastioes/teseu/artigo19.html" class="bastiao-link">#19 – Em que consiste nossa fraternidade filosófica?</a>
-            <a href="bastioes/teseu/artigo20.html" class="bastiao-link">#20 – Irmandade</a>
-        </div>
-        
-        <!-- 6º Bimestre -->
-        <div class="card">
-            <span class="tag">6º Bimestre</span>
-            <h3>A Bondade e a Generosidade</h3>
-            <p>Participar da vida sem expectativa (sem desejo ou medo). Perceber-se como uma parte a serviço do que a vida lhe apresenta como necessidade.</p>
-            <a href="bastioes/teseu/artigo21.html" class="bastiao-link">#21 – A harmonia e a bondade</a>
-            <a href="bastioes/teseu/artigo22.html" class="bastiao-link">#22 – Fazer parte</a>
-            <a href="bastioes/teseu/artigo23.html" class="bastiao-link">#23 – Atuar com o coração</a>
-            <a href="bastioes/teseu/artigo24.html" class="bastiao-link">#24 – Mozart é um gênio</a>
-        </div>
-    </div>
-
-    <section id="inspiracao" class="section-container">
-        <h2 class="section-title">Inspiração Mitológica</h2>
-        <p>O eixo simbólico dessa etapa é a <strong>figura do herói, inspirada em Teseu.</strong> O herói é aquele que rompe com o habitual, com o automático e com o simplesmente familiar, e se lança de forma consciente na aventura da vida. É isso que buscamos: um abandono progressivo de uma visão centrada apenas no próprio núcleo ou nos próprios interesses, em direção a uma percepção mais ampla, onde reconhecemo-nos como célula de um grande corpo chamado humanidade. É um convite a se ver como parte ativa da humanidade, percebendo que sua vida ganha sentido quando é colocada a serviço de algo que a transcende.</p>
-        <p>O símbolo do <strong>machado de duplo fio</strong> sintetiza esse processo. Ele representa essa abertura de um novo caminho para dentro e para fora ao mesmo tempo. É o trabalho interno e externo que buscamos: compreensões e vivências; transformação de si mesmo e ação no mundo. O nosso desenvolvimento deve ser, ao mesmo tempo, individual e coletivo — para nós e para os demais.</p>
-    </section>
-
-    <section id="praticas" class="section-container">
-        <h2 class="section-title">Práticas de Vida Interior</h2>
-        <p>O Grupo não se resume a leituras. Os encontros são orientados por <strong>Práticas</strong> e <strong>Desafios Bimestrais</strong>.</p>
-        <ul>
-            <li><strong>Diário de Vida Interior:</strong> Sugerimos o registro constante de suas percepções.</li>
-            <li><strong>Práticas Dinâmicas:</strong> Mais importante até do que fazer práticas de olhos fechados e sentados, é fazê-las de olhos abertos e em movimento, na vida real.</li>
-            <li><strong>Acompanhamento Filosófico:</strong> As dificuldades encontradas podem ser levadas aos instrutores para aconselhamento e aprofundamento.</li>
-        </ul>
-    </section>
-</div>
-
-<div class="footer">
-    <p>Grupo de Acompanhamento Filosófico - Etapa Teseu 2026</p>
-    <p><small>"Conhece-te a ti mesmo e conhecerás o Universo!"</small></p>
-</div>
+    <footer class="footer">
+        <p>Grupo de Acompanhamento Filosófico - Etapa Teseu 2026</p>
+        <p><small>"Conhece-te a ti mesmo e conhecerás o Universo!"</small></p>
+    </footer>
 
 </body>
 </html>

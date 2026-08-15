@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Pular para o conteudo principal</a>
 
 <script src="./../../auth.js"></script>
 <script>
@@ -24,9 +25,9 @@
         </div>
     </header>
 
-    <main class="container">
+    <main id="conteudo" class="container" aria-label="Conteudo do artigo">
         
-        <article class="section-container">
+        <article class="section-container" aria-label="Texto principal do artigo">
             <p>Neste mês de Maio de 1990 é bom lembrar, a quem foi como um humilde galho de pinheiro, que queimou nas trevas do século XIX para iluminar os seus semelhantes até a sua última fibra, e da qual, recolhendo a última chispa acendemos a Lâmpada Filosófica que hoje ilumina em mais de 50 países do globo.</p>
             
             <p>Nasceu prematuramente (segundo o calendário da Igreja Ortodoxa Russa, no dia 12 de Agosto), entre o dia 30 e 31 de julho de 1831 em Ekaterinoslav, ao sul da Rússia. Estava relacionada com a família dos Czares. Sua vida é bem conhecida por todos nós. Não tocaremos, então, essa faceta, mas outra, mais espiritual e por sua vez mais trágica: sua extraordinária militância.</p>
@@ -76,23 +77,28 @@
             <p>Este escritor, que tem a honra de se considerar um dos seus Discípulos, presta, no Mês do Lótus Branco, sua singela homenagem.</p>
         </article>
 
-        <aside id="nota-1">
+        <aside id="nota-1" aria-label="Notas de rodape">
             <p><strong>Notas de rodapé:</strong></p>
             <p class="notas">
                 [1] Ariavarta (Âryâvarta o Âryâvartta): “A terra dos ários, referindo-se à Índia. Um nome antigo para o norte da Índia, onde os invasores brâmanicoss se estabeleceram pela primeira vez. É incorreto aplicar esse nome a toda a Índia, visto que Manu se refere à “terra dos ários”, apenas como a “região entre as cordilheiras do Himalaia e de Vindhya”, do mar oriental ao mar ocidental. (Glossário Teosófico)
-                <a href="#ref-1">Voltar ao texto</a>
+                <a href="#ref-1" aria-label="Voltar ao texto principal">Voltar ao texto</a>
             </p>
         </aside>
-        <aside id="nota-2">
+        <aside id="nota-2" aria-label="Notas de rodape">
             <p class="notas">
                 [2] Mário Roso de Luna (15 de março de 1872, em Logrosán – 15 de novembro de 1931, em Madri) foi um advogado, astrônomo, escritor, inventor, linguista, astrofísico, jornalista, geólogo, arqueólogo, tradutor, teosofista e maçom espanhol[citação necessária]. Roso gostava de se definir como um "Teosofista" e um "ateneísta", relativo à sua filiação no Ateneo de Madrid, juntamente com outras figuras importantes do período.
-                <a href="#ref-2">Voltar ao texto</a>
+                <a href="#ref-2" aria-label="Voltar ao texto principal">Voltar ao texto</a>
             </p>
         </aside>
 
+    <nav class="article-nav" aria-label="Navegação entre artigos">
+        <a href="artigo15.html" aria-label="Artigo anterior">&larr; Anterior</a>
+        <a href="../../../teseu.html" aria-label="Voltar para etapa Teseu">Voltar</a>
+        <a href="artigo17.html" aria-label="Próximo artigo">Próximo &rarr;</a>
+    </nav>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" aria-label="Rodape do artigo">
         <hr>
         <p>[J]</p>
     </footer>

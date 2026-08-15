@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Pular para o conteudo principal</a>
 
 <script src="./../../auth.js"></script>
 <script>
@@ -24,9 +25,9 @@
         </div>
     </header>
 
-    <main class="container">
+    <main id="conteudo" class="container" aria-label="Conteudo do artigo">
         
-        <article class="section-container">
+        <article class="section-container" aria-label="Texto principal do artigo">
             <p>Dizíamos em textos anteriores que o termo “coragem” - equivalente a Valor como virtude filosófica - significa “agir com o coração”. E também esclarecemos que o coração é, na melhor das hipóteses, o conjunto de nossos sentimentos mais elevados ao serviço da inteligência.</p>
             
             <p>Retornemos ao Coração e às ações que surgem do Coração.</p>
@@ -65,9 +66,14 @@
             <p>Conhecimento, coração, língua… Pensamento, sentimento e ação, nossa tríade para andar neste mundo e para conquistar o outro.</p>
         </article>
 
+    <nav class="article-nav" aria-label="Navegação entre artigos">
+        <a href="artigo22.html" aria-label="Artigo anterior">&larr; Anterior</a>
+        <a href="../../../teseu.html" aria-label="Voltar para etapa Teseu">Voltar</a>
+        <a href="artigo24.html" aria-label="Próximo artigo">Próximo &rarr;</a>
+    </nav>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" aria-label="Rodape do artigo">
         <hr>
         <p>[D]</p>
     </footer>

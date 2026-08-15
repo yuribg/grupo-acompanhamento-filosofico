@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Pular para o conteudo principal</a>
 
 <script src="./../../auth.js"></script>
 <script>
@@ -24,9 +25,9 @@
         </div>
     </header>
 
-    <main class="container">
+    <main id="conteudo" class="container" aria-label="Conteudo do artigo">
         
-        <article class="section-container">
+        <article class="section-container" aria-label="Texto principal do artigo">
             <p>Com nossos primeiros passos no Ideal Filosófico, um antigo texto de Sabedoria - o Bhagavad Gita - nos assinala as três virtudes que devem caracterizar ao bom discípulo. São o Serviço, a Devoção e a Investigação.</p>
             
             <p>São como três degraus em um, três condições intimamente unidas, sem as quais é impossível percorrer um verdadeiro caminho de evolução.</p>
@@ -88,9 +89,14 @@
             <p>Nada maior que ser um bom discípulo, nada melhor que amar, investigar e servir, que equivale a aquilo de SABER É PODER.</p>
         </article>
 
+    <nav class="article-nav" aria-label="Navegação entre artigos">
+        <a href="artigo12.html" aria-label="Artigo anterior">&larr; Anterior</a>
+        <a href="../../../teseu.html" aria-label="Voltar para etapa Teseu">Voltar</a>
+        <a href="artigo14.html" aria-label="Próximo artigo">Próximo &rarr;</a>
+    </nav>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" aria-label="Rodape do artigo">
         <hr>
         <p>[D]</p>
     </footer>

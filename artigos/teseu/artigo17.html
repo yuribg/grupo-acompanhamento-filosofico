@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Pular para o conteudo principal</a>
 
 <script src="./../../auth.js"></script>
 <script>
@@ -24,9 +25,9 @@
         </div>
     </header>
 
-    <main class="container">
+    <main id="conteudo" class="container" aria-label="Conteudo do artigo">
         
-        <article class="section-container">
+        <article class="section-container" aria-label="Texto principal do artigo">
             <p>Este é um ponto que temos tocado algumas vezes em diferentes cursos, porém que permanece obscuro, pois é normal e corrente que por “cortesia” se entenda uma série de valores e atitudes passados de moda, extremamente “burgueses”, que não concordariam com nossa proposta de buscarmos conformar um Ser Humano Novo e Melhor.</p>
             
             <p>A palavra, pelo menos na etimologia espanhola, se refere ao comportamento dos indivíduos integrados em uma “corte”, entendendo-se por corte a elite que rodeavam aos antigos príncipes e reis. Por extensão, se aplicou a todo tipo de forma de relação entre pessoas de boa educação, as damas e os cavalheiros, diferenciando-os dos grosseiros e vilões que não respeitavam tais elementos, deixando seus impulsos instintivos soltos, sem lhes importar quanta ofensa podiam provocar aos outros, ou abusos cometer com eles, especialmente com as mulheres, as crianças e os anciãos desvalidos de força própria para fazer-se respeitar e guardar seus bens e crenças.</p>
@@ -58,9 +59,14 @@
             <p>Sejamos FORTES.</p>
         </article>
 
+    <nav class="article-nav" aria-label="Navegação entre artigos">
+        <a href="artigo16.html" aria-label="Artigo anterior">&larr; Anterior</a>
+        <a href="../../../teseu.html" aria-label="Voltar para etapa Teseu">Voltar</a>
+        <a href="artigo18.html" aria-label="Próximo artigo">Próximo &rarr;</a>
+    </nav>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" aria-label="Rodape do artigo">
         <hr>
         <p>[J]</p>
     </footer>

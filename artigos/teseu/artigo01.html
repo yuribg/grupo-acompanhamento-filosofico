@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Pular para o conteudo principal</a>
 
 <script src="./../../auth.js"></script>
 <script>
@@ -24,9 +25,9 @@
         </div>
     </header>
 
-    <main class="container">
+    <main id="conteudo" class="container" aria-label="Conteudo do artigo">
         
-        <article class="section-container">
+        <article class="section-container" aria-label="Texto principal do artigo">
             <p>O Ano do Heroísmo <sup class="notas"><a href="#nota-1" id="ref-1">[1]</a></sup> nos abre suas portas e nos impulsiona, como em outras ocasiões, a buscar o significado que encerra seu nome. Em princípio, parece simples, pois nos achamos diante de uma virtude muitas vezes elogiada por sábios, poetas e, naturalmente, por filósofos. Parece simples compreender este heroísmo que haverá de converter-se em nosso companheiro por doze meses. Entretanto, confiamos em que o tempo nos irá desvelando novos matizes, cantos por agora obscuros, que haverão de proporcionar-nos novas luzes sobre o heroísmo.</p>
             
             <h2 class="section-title">Que é um herói?</h2>
@@ -61,17 +62,22 @@
             <p>Conquistemos, pois, o herói que há em cada um de nós, e demonstremo-lo com verdadeiro heroísmo.</p>
         </article>
 
-        <aside id="nota-1">
+        <aside id="nota-1" aria-label="Notas de rodape">
             <p><strong>Notas de rodapé:</strong></p>
             <p class="notas">
                 [1] Ano de 2002, cujo lema de trabalho era "O Heroísmo".
-                <a href="#ref-1">Voltar ao texto</a>
+                <a href="#ref-1" aria-label="Voltar ao texto principal">Voltar ao texto</a>
             </p>
         </aside>
 
+    <nav class="article-nav" aria-label="Navegação entre artigos">
+        <span class="article-nav-disabled">&larr; Anterior</span>
+        <a href="../../../teseu.html" aria-label="Voltar para etapa Teseu">Voltar</a>
+        <a href="artigo02.html" aria-label="Próximo artigo">Próximo &rarr;</a>
+    </nav>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" aria-label="Rodape do artigo">
         <hr>
         <p>[D]</p>
     </footer>

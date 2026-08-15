@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Pular para o conteudo principal</a>
 
 <script src="./../../auth.js"></script>
 <script>
@@ -24,9 +25,9 @@
         </div>
     </header>
 
-    <main class="container">
+    <main id="conteudo" class="container" aria-label="Conteudo do artigo">
         
-        <article class="section-container">
+        <article class="section-container" aria-label="Texto principal do artigo">
             <p>Foi-nos ensinado, em diversas oportunidades, que o trabalho não é uma “maldição” a que nos vemos sujeitos em virtude da natureza pecaminosa do homem. Ao contrário, a capacidade de trabalhar construindo é uma característica própria do homem que não vamos encontrar nem nas pedras, nem nas plantas, mas em alguns animais que já demonstram sua incipiente inteligência.</p>
             
             <p>Trabalhar é construir. Não podemos interpretar o trabalho como a pesada necessidade de ganhar a vida. É certo que todos temos que ganhar a vida, mas não como uma carga, e sim como uma forma digna de demonstrar que estamos vivos.</p>
@@ -53,9 +54,14 @@
             <p>Se o trabalho é uma condição inata do ser humano, pela mesma razão é uma fonte segura de felicidade. Se soubermos preencher nossas vidas com trabalhos realmente produtivos, se virmos como surgem de nossas mãos tarefas bem acabadas, baniríamos muitos mal-estares psicológicos, muitas tagarelices tontas, muitas nuvens mentais e, em troca, ganharíamos em segurança pessoal e serviço à humanidade.</p>
         </article>
 
+    <nav class="article-nav" aria-label="Navegação entre artigos">
+        <a href="artigo09.html" aria-label="Artigo anterior">&larr; Anterior</a>
+        <a href="../../../teseu.html" aria-label="Voltar para etapa Teseu">Voltar</a>
+        <a href="artigo11.html" aria-label="Próximo artigo">Próximo &rarr;</a>
+    </nav>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" aria-label="Rodape do artigo">
         <hr>
         <p>[D]</p>
     </footer>

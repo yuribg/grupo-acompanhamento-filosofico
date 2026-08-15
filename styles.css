@@ -6,6 +6,38 @@
     --bg-card: #ffffff;
 }
 
+:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 3px;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: var(--primary-color);
+    color: var(--text-light);
+    padding: 10px 16px;
+    z-index: 10000;
+    border-radius: 0 0 8px 0;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -68,9 +100,11 @@ nav a {
     margin: 0 15px;
     font-weight: bold;
     font-size: 0.9em;
+    border-radius: 4px;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus-visible {
     color: var(--accent-color);
 }
 
@@ -152,6 +186,42 @@ nav a:hover {
     margin-top: 50px;
 }
 
+/* ========== ESTILOS PARA ARTIGOS ========== */
+.article-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 40px 0;
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+
+.article-nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 2px solid var(--accent-color);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.article-nav a:hover,
+.article-nav a:focus-visible {
+    background: var(--accent-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.article-nav-disabled {
+    color: #999;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
 .tag {
     display: inline-block;
     background: #e0e0e0;
@@ -174,7 +244,7 @@ nav a:hover {
     margin-bottom: 60px;
 }
 
-.home-header h1 {
+.home-header h2 {
     font-size: 3em;
     color: var(--primary-color);
     margin: 0 0 15px 0;
@@ -195,6 +265,7 @@ nav a:hover {
     gap: 40px;
     max-width: 1000px;
     width: 100%;
+    background: transparent;
 }
 
 .stage-card {
@@ -218,7 +289,7 @@ nav a:hover {
     border-color: var(--primary-color);
 }
 
-.stage-card h2 {
+.stage-card h3 {
     font-size: 2em;
     color: var(--accent-color);
     margin: 0 0 15px 0;
@@ -283,7 +354,7 @@ nav a:hover {
     filter: drop-shadow(0 0 5px rgba(197, 160, 89, 0.4));
 }
 
-.login-box h2 {
+.login-box h1 {
     color: var(--primary-color);
     font-size: 2em;
     margin: 0 0 10px 0;
@@ -371,7 +442,7 @@ nav a:hover {
         border-radius: 10px;
     }
 
-    .login-box h2 {
+    .login-box h1 {
         font-size: 1.5em;
         margin-bottom: 8px;
     }
@@ -428,7 +499,7 @@ nav a:hover {
         font-size: 0.8em;
     }
 
-    .home-header h1 {
+    .home-header h2 {
         font-size: 2em;
     }
 
@@ -469,7 +540,7 @@ nav a:hover {
         padding: 20px 20px;
     }
 
-    .login-box h2 {
+    .login-box h1 {
         font-size: 1.3em;
     }
 
