@@ -196,10 +196,19 @@ nav a:focus-visible {
     padding: 20px;
     background: #f0f0f0;
     border-radius: 8px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
-.article-nav a {
+.article-nav > * {
+    flex: 1 1 0;
+    text-align: center;
+}
+
+.article-nav a,
+.article-nav-disabled {
+    display: inline-block;
+    min-width: 0;
+    white-space: nowrap;
     color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
@@ -218,8 +227,8 @@ nav a:focus-visible {
 
 .article-nav-disabled {
     color: #999;
-    padding: 10px 15px;
-    font-weight: bold;
+    border-color: #d4d4d4;
+    background: #f7f7f7;
 }
 
 .tag {
@@ -532,6 +541,17 @@ nav a:focus-visible {
     .bastiao-link {
         font-size: 0.85em;
         padding: 8px;
+    }
+
+    .article-nav {
+        gap: 8px;
+        padding: 12px 10px;
+    }
+
+    .article-nav a,
+    .article-nav-disabled {
+        font-size: 0.75em;
+        padding: 8px 6px;
     }
 }
 
